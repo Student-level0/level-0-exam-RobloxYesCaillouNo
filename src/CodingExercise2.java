@@ -10,7 +10,19 @@ import javax.swing.JOptionPane;
  **/
 
 public class CodingExercise2 {
+public static void main(String[] args) {
+	
 
+	String g = JOptionPane.showInputDialog("Enter age");
+int a = Integer.parseInt(g);
+if (a >= 31 ) {
+	JOptionPane.showMessageDialog(null, "Sorry, you are over 30 years of age, you're too old!");
+}
+else if(a < 31) {
+JOptionPane.showMessageDialog(null, "You were born around the year " +(2017 - a)+ " or " +(2016 - a)  );
+}
+
+}
 }
 
 
